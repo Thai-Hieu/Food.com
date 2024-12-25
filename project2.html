@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="google-site-verification" content="U35O1QXQ3WP6HWgKrxC7T31hqI7CNRM9172p__ZyAbA" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project 1</title>
+        <link rel="stylesheet" href="./project2.css">
+        <link rel="stylesheet" href="./responsive.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="main">
+           <!-- Hidden checkbox to toggle sidebar -->
+    <input type="checkbox" id="toggle-sidebar" hidden>
+
+    <!-- Overlay -->
+    <label for="toggle-sidebar" class="sidebar-overlay"></label>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <label for="toggle-sidebar" class="close-btn">×</label>
+        <div class="form_header">
+            <ul class="form_header-element">
+                <li><a href="#home" class="form_header-item" onclick="document.getElementById('toggle-sidebar').checked = false;">Gourmet au Catering</a></li>
+                <li><a href="#About" class="form_header-item" onclick="document.getElementById('toggle-sidebar').checked = false;">About</a></li>
+                <li><a href="#Menu" class="form_header-item" onclick="document.getElementById('toggle-sidebar').checked = false;">Menu</a></li>
+                <li><a href="#Contact" class="form_header-item" onclick="document.getElementById('toggle-sidebar').checked = false;">Contact</a></li>
+                <li><a href="#Footer" class="form_header-item" onclick="document.getElementById('toggle-sidebar').checked = false;">Footer</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Open Sidebar Button -->
+    <label for="toggle-sidebar" class="open-btn">☰</label>
+        <div id="home" class="content_img">
+            <p class="content_img-text">Le Catering</p>
+            <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="loadding" class="content_img-item">
+        </div>
+        <div id="About" class="siderbar">
+            <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="" class="siderbar_img">
+            <div class="siderbar_content">
+                <h1 class="siderbar_content-header">About Catering</h1>
+                <p class="siderbar_content-item">Tradition since 1889</p>
+                <p class="siderbar_content-text">
+                    The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span>seasonal</span> ingredients.</p>
+                <p class="siderbar_content-text2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div id="Menu" class="menu_content">
+            <div class="menu">
+                <h1 class="menu_header">Our Menu</h1>
+                <h2 class="menu_item">Bread Basket</h2>
+                <p class="menu_text">Assortment of fresh baked fruit breads and muffins 5.50</p>
+                
+                <h2 class="menu_item">Honey Almond Granola with Fruits</h2>
+                <p class="menu_text">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+               
+                <h2 class="menu_item">Belgian Waffle</h2>
+                <p class="menu_text">Vanilla flavored batter with malted flour 7.50 </p>
+                
+                <h2 class="menu_item">Scrambled eggs</h2>
+                <p class="menu_text">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50 </p>
+                
+                <h2 class="menu_item">Blueberry Pancakes</h2>
+                <p class="menu_text">With syrup, butter and lots of berries 8.50</p>
+    
+            </div>
+            <div class="menu_content-img">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="" class="menu_img">
+            </div>
+        </div>
+        <div class="border"></div>
+        <form action="">
+            <div id="Contact" class="contact">
+                <div class="contact_content">
+                    <h1 class="contact_header">Contact</h1>
+                    <p class="contact_text">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                    <h2 class="contact_header2">Catering Service, 42nd Living St, 43043 New York, NY</h2>
+                    <p class="contact_text2">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                </div>
+                <div class="contact_input">
+                    <input type="text" class="contact_input-item" required placeholder="Name">
+                    <input type="number" class="contact_input-item" required placeholder="How many people">
+                    <input type="datetime-local" id="date" class="contact_input-item" name="date">
+                    <input type="text" class="contact_input-item" required placeholder="Message / Special requirements">
+                </div>
+                <div class="contact_button">
+                    <input type="submit" value="SEND MESSAGE" class="contact_button-item">
+                </div>
+            </div>
+        </form>
+        <div id="Footer" class="footer">
+            <p class="footer_text">Powered by<a class="link" href="https://www.w3schools.com/w3css/default.asp">W3.css</a></p>
+        </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,277 @@
+@media (min-width: 64em) {
+    #toggle-sidebar {
+        display: none;
+    }
+    .close-btn {
+        display: none;
+    }
+    .content_img-item {
+        margin-top: 40px;
+    }
+    .form_header .form_header-element {
+        margin-top: 0;
+    }
+    .form_header-element1 {
+        display: flex;
+    }
+}
+/* Responsive cho Tablet (kích thước ≤ 768px) */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .form_header {
+        padding: 0;
+    }
+      .form_header .form_header-element {
+        overflow-x: auto; /* Bật thanh cuộn ngang nếu không đủ chỗ */
+        /*white-space: nowrap; /* Giữ tất cả các mục trên một dòng */
+        padding: 0 24px;
+        line-height: 35px;
+      }
+      .form_header .form_header-item {
+        font-size: 1.4rem; /* Thu nhỏ kích thước chữ cho tablet */
+      }
+    #About {
+    display: flex; /* Sử dụng Flexbox để tạo bố cục ngang */
+    flex-direction: row; /* Xếp các phần tử theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa ảnh và văn bản */
+    padding: 64px 24px; /* Khoảng cách bên trong */
+    gap: 20px; /* Khoảng cách giữa ảnh và nội dung */
+    }
+
+/* Ảnh trong phần About */
+.siderbar_img {
+    flex: 1; /* Chiếm không gian linh hoạt */
+    max-width: 50%; /* Giới hạn kích thước tối đa là 50% */
+    height: auto; /* Đảm bảo ảnh giữ tỉ lệ gốc */
+    border-radius: 8px; /* Bo góc ảnh */
+}
+.content_img-item {
+    margin-top: 26px;
+}
+/* Văn bản trong phần About */
+.siderbar_content {
+    flex: 2; /* Chiếm không gian lớn hơn so với ảnh */
+    text-align: left; /* Căn lề trái cho văn bản */
+}
+    .siderbar_img {
+        max-width: 100%; /* Ảnh chiếm toàn bộ chiều rộng */
+        margin-bottom: 20px; /* Tạo khoảng cách với nội dung văn bản */
+    }
+
+    .siderbar_content {
+        text-align: center; /* Văn bản căn giữa cho giao diện nhỏ */
+    }
+    .siderbar_content-text {
+        text-align: justify;
+    }
+    .siderbar_content-text2 {
+        display: none;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu_content {
+        display: block;
+        padding: 0 24px;
+    }
+    .menu_img {
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+        padding: 0 24px;
+    }
+    .contact_input-item {
+        border: 1px solid #ccc;;
+    }
+    .contact_button-item {
+        width: 100%;
+        margin: 35px 0;
+        padding: 16px 0;
+        font-size: 1.8rem;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+
+    #toggle-sidebar {
+        display: none;
+    }
+    .close-btn {
+        display: none;
+    }
+    .form_header-item-1 {
+        margin: 0;
+    }
+}
+
+/* Responsive cho Mobile (kích thước ≤ 480px) */
+@media (max-width: 46.1875em) {
+    .main {
+        overflow: hidden;
+    }
+    .form_header {
+        flex-direction: column; /* Chuyển tất cả thành dạng cột */
+        align-items: center; /* Căn giữa nội dung */
+        padding: 0;
+        position: unset;
+    }
+    .form_header .form_header-element {
+        display: block;
+        padding: 0;
+        height: 0;
+        margin-top: 30px;
+    }
+    .form_header .form_header-item {
+        width: 100%;
+        padding: 8px 24px 12px 12px;
+    }
+    .content_img-item {
+        width: 100%;
+    }
+    #About {
+        text-align: center; /* Văn bản căn giữa cho dễ đọc */
+        padding: 35px 10px 20px 10px;
+    }
+
+    .siderbar_img {
+        display: none;
+    }
+
+    .siderbar_content {
+        width: 100%; /* Văn bản chiếm toàn bộ chiều rộng */
+    }
+    .siderbar_content-text {
+        padding: 0 12px;
+    }
+    .siderbar_content-text2 {
+        display: block;
+        padding: 0 12px;
+    }
+    .menu_content {
+        display: block;
+        padding: 0;
+    }
+    .contact, .menu {
+        width: 100%;
+        padding: 40px 12px 0 12px;
+    }
+    .contact_header {
+        margin: 30px 0 65px 0;
+    }
+    .contact_input-item {
+        border: 1px solid #ccc;
+        font-size: 1.6rem;
+    }
+    .contact_button-item {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding: 16px 0;
+    }
+    .menu_header {
+        margin: 30px 0 65px 0;
+    }
+    .border {
+        margin: 40px 0 0px 0;
+    }
+    .menu_img {
+        margin-bottom: 20px;
+    }
+    .contact_text, .contact_text2, .menu_text, .contact_header2 {
+        line-height: 2.6rem;
+    }
+    .content_img-text {
+        left: 12px;
+        bottom: 22px;
+    }
+    .footer {
+        padding: 20px 0;
+    }
+.sidebar {
+    display: block;
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    background-color: #fff;
+    color: #888;
+    transition: 0.3s;
+    padding: 20px 10px;
+    z-index: 1000;
+}
+        /* Overlay */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 900;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px 0;
+    width: 100%;
+    display: table-row-group;
+}
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.open-btn, .close-btn {
+    font-size: 35px;
+    color: #575757;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    z-index: 1100;
+}
+.open-btn:hover, .close-btn:hover {
+    background-color: #ccc;
+}
+.main .open-btn {
+    width: 100%;
+    padding: 20px 16px;
+    top: 0;
+    background-color: #fff;
+}
+.main .close-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 62px;
+    padding: 12px 8px;
+}
+ /* Checkbox Hidden State */
+ #toggle-sidebar {
+    display: none;
+}
+
+/* Sidebar Open State */
+#toggle-sidebar:checked ~ .sidebar {
+    left: 0;
+}
+
+/* Overlay Visible State */
+#toggle-sidebar:checked ~ .sidebar-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hide Open Button When Sidebar is Open */
+#toggle-sidebar:checked ~ .open-btn {
+    display: none;
+}
+}
